@@ -24,13 +24,13 @@ async function checkWeather(city) {
     document.querySelector(".wind").innerHTML = data.wind.speed + " km/h";
 
     if (data.weather[0].main == "Clouds") {
-      weatherIcon.src = "images/clouds.png";
+      weatherIcon.src = "https://raw.githubusercontent.com/satheesh1134/raww/main/images/clouds.png";
     } else if (data.weather[0].main == "Clear") {
-      weatherIcon.src = "images/clear.png";
+      weatherIcon.src = "https://raw.githubusercontent.com/satheesh1134/raww/main/images/clear.png";
     } else if (data.weather[0].main == "Drizzle") {
-      weatherIcon.src = "images/drizzle.png";
+      weatherIcon.src = "https://raw.githubusercontent.com/satheesh1134/raww/main/images/drizzle.png";
     } else if (data.weather[0].main == "Mist") {
-      weatherIcon.src = "images/mist.png";
+      weatherIcon.src = "https://raw.githubusercontent.com/satheesh1134/raww/main/images/mist.png";
     }
 
     document.querySelector(".weather").style.display = "block";
@@ -40,3 +40,4 @@ async function checkWeather(city) {
 searchBtn.addEventListener("click", () => {
   checkWeather(searchBox.value);
 });
+
